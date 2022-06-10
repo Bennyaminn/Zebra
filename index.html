@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Sklepik" />
+        <meta name="author" content="Beniamin Niczyporuk" />
+        <title>Zebra</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/zebra.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBx9bTJjq8HlfEJ1FuWlJfMl9hW304mfZc&callback=initMap&libraries=&v=weekly"
+            async
+        ></script>
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fs-3">
+            <div class="container px-4 px-lg-5">
+                <img src="assets/zebra.ico" height="86" width="86" alt="Zebra"/>
+                <a class="navbar-brand fs-2" >Zebra</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link handover" id="show_main" aria-current="page">Strona główna</a></li>
+                        <li class="nav-item"><a class="nav-link handover" id="show_about">O nas</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sklep</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item handover" id="all_products">Wszystkie produkty</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#!">Owoce</a></li>
+                                <li><a class="dropdown-item" href="#!">Wypieki</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-dark fs-5" id="show_cart">
+                        <i class="bi-cart-fill me-1 "></i>
+                        Koszyk
+                        <span class="badge bg-dark text-white ms-1 rounded-pill" id="cartAmmount">0</span>
+                    </button>
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container px-4 px-lg-5 my-5">
+                            <div class="text-center text-white">
+                                <h1 class="display-4 fw-bolder">Zebra</h1>
+                                <p class="lead fw-normal text-white-50 mb-0">Lepsza niż Żabka</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container px-4 px-lg-5 my-5">
+                            <div class="text-center text-white">
+                                <h1 class="display-4 fw-bolder">Baner w trakcie budowy</h1>
+                                <p class="lead fw-normal text-white-50 mb-0">Prosimy o cierpliwość</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container px-4 px-lg-5 my-5">
+                            <div class="text-center text-white">
+                                <h1 class="display-4 fw-bolder">Może i nie najtaniej</h1>
+                                <p class="lead fw-normal text-white-50 mb-0">Ale jako tako</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Section-->
+        <section class="py-5">
+            <h3 class="text-center mb-5">Zamawiaj z nami już dziś!</h3>
+            <div class="row px-5 mx-5">
+                <div class="col-sm-12 col-md-12 col-lg-6"><img src="assets/zebra_main.jpg" alt="zebra"/></div>
+                <div class="col-sm-12 col-md-12 col-lg-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum leo non ornare aliquam. Nulla ante turpis, condimentum a laoreet non, imperdiet vitae ipsum. Aenean nec orci in nisi fermentum pretium. Donec ac eleifend velit, quis euismod mi. Ut sodales turpis interdum nisi cursus imperdiet. Pellentesque lobortis sapien vitae felis dignissim, laoreet tristique urna egestas. Cras vitae urna neque. Nulla pharetra, orci a fermentum elementum, risus felis placerat dolor, eget molestie turpis metus at magna. Proin at arcu tincidunt, dignissim nibh ac, venenatis ipsum. Proin hendrerit elit vitae justo aliquam lobortis. Curabitur ac consequat lectus, a congue ipsum. In suscipit pellentesque diam in aliquet. Maecenas sed urna ut elit varius pretium. Cras fringilla, sem ut sagittis rutrum, ligula magna placerat nulla, vitae sollicitudin justo est eget risus. Donec faucibus in nunc et vestibulum.
+
+Cras purus nisl, pretium vel ipsum venenatis, ultricies sodales tellus. Nunc eros magna, pharetra sit amet tellus nec, maximus facilisis dui. Curabitur sollicitudin elit leo, quis sodales lectus feugiat in. Nulla tincidunt fringilla justo, in placerat tellus congue ut. Praesent maximus urna tincidunt sem suscipit cursus. Fusce iaculis ullamcorper elit a congue. Sed et fermentum elit, eget pretium eros. Nulla eu tellus in justo hendrerit porttitor. Mauris eu sapien non neque viverra tempus vel quis augue. Aenean fringilla porttitor felis sed venenatis.</div>
+             </div> 
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 px-3 bg-dark">
+            <div class="row gx-0 justify-content-between">
+                <div class="col-md-6 col-sm-12" >
+                    <p class="m-0 text-white fs-5">
+                        Copyright &copy; Zebra Website 2021</p></div>
+                <div class="btn-group col-md-3 col-sm-12 text-primary" role="group" aria-label="Basic outlined example">
+                    <button type="button" class="btn btn-outline-primary"><i class="bi bi-facebook h5"></i></button>
+                    <button type="button" class="btn btn-outline-primary"><i class="bi bi-twitter"></i></button>
+                    <button type="button" class="btn btn-outline-primary"><i class="bi bi-whatsapp"></i></button>
+                    <button type="button" class="btn btn-outline-primary"><i class="bi bi-google"></i></button>
+                </div>
+
+            </div>
+
+        </footer>
+        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitle">Przegląd produktu</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container px-4 px-lg-5 my-5">
+                            <div class="row gx-4 gx-lg-5 align-items-center">
+                                <div class="col-md-6" id="modalImage"><img class="card-img-top mb-5 mb-md-0" src="assets/jablko.jpg" alt="..." /></div>
+                                <div class="col-md-6">
+                                    <h1 class="display-5 fw-bolder"><span id="modalProduct">Shop item template</span></h1>
+                                    <div class="fs-5 mb-5" id="modalPrice">
+                                        <span class="text-decoration-line-through">$45.00</span>
+                                        <span>&nbsp;$40.00</span>
+                                    </div>
+                                </div>
+                                <p class="lead" id="modalDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="d-flex">
+                            <input class="form-control text-center me-3" id="modalQuantity" type="text" value="1" style="max-width: 3rem;" />
+                            <button class="btn btn-outline-dark flex-shrink-2" type="button" id="modalButton">
+                                <i class="bi-cart-fill me-1"></i>
+                                Dodaj do koszyka
+                            </button>
+                        </div>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="$('#modal').modal('hide')">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

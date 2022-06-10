@@ -1,0 +1,10 @@
+{
+"name":"Jabłko",
+"category":"owoce",
+"image":"jablko.jpg",
+"rating": 3,
+"sale": true,
+"old_price":3.20,
+"price":2.50,
+"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra porttitor ornare. Suspendisse at fermentum leo, eu varius ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat lorem, semper quis facilisis in, finibus sit amet urna. Fusce ut rutrum sapien. Morbi in leo metus. Morbi vulputate elit tortor, id consectetur orci sagittis id. Sed sit amet nunc eget leo sollicitudin maximus."
+}
